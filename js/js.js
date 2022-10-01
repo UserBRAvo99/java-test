@@ -42,3 +42,14 @@
 //     console.log("counter: ", counter);
 //     counter += 1;
 // }
+
+// FOR
+
+// const target = 4;
+// let sum = 0;
+
+// for (let i = 0; i <= target; i += 2) {
+//     sum += i;
+// }
+
+// console.log(sum);
