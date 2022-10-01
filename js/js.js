@@ -35,3 +35,10 @@
 // const message = `You ordered droids worth ${totalPrice} credits. Delivery ( ${deliveryFee} credits) is incuded in total price.`
 // console.log(message)
 
+// ЛІЧИЛЬНИК
+// let counter = 0;
+
+// while (counter <= 20) {
+//     console.log("counter: ", counter);
+//     counter += 1;
+// }
