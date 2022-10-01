@@ -51,5 +51,10 @@
 // for (let i = 0; i <= target; i += 2) {
 //     sum += i;
 // }
-
 // console.log(sum);
+
+
+
+// for (let i = 0; i <= 100; i += 5) {
+//     console.log(i);
+// }
