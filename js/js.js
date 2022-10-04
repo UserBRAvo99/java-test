@@ -58,3 +58,18 @@
 // for (let i = 0; i <= 100; i += 5) {
 //     console.log(i);
 // }
+
+
+// Задача
+// const minSalary = 500;
+// const maxSalary = 5000;
+// const emploees = 5;
+// let totalSalary = 0;
+
+// for (let i = 1; i <= emploees; i = i + 1) {
+//     const salary = Math.round(Math.random() * (maxSalary - minSalary) + minSalary);
+//     console.log(`Зарплата робітника - ${i} - ${salary}`)
+//     totalSalary = totalSalary + salary;
+// }
+// console.log(`Фонд зарплат складає - ${totalSalary}`)
+
