@@ -73,3 +73,55 @@
 // }
 // console.log(`Фонд зарплат складає - ${totalSalary}`)
 
+
+
+// const clients = ["Mango", "Ajax", "Poly"];
+
+// for (const client of clients) {
+//     console.log(client);
+// }
+
+// const string = "javascript";
+
+// for (const character of string) {
+//     console.log(character);
+// }
+
+
+
+// function getExtremeElements(array) {
+//   // Change code below this line
+//   let arrayFirst = [array[0], array[array.length - 1]];
+
+//   console.log(arrayFirst)
+
+
+//   // Change code above this line
+// }
+// getExtremeElements([1, 2, 3, 4, 5])
+// // повертає[1, 5]
+// getExtremeElements(["Earth", "Mars", "Venus"])
+// // повертає["Earth", "Venus"]
+// getExtremeElements(["apple", "peach", "pear", "banana"])
+// // повертає["apple", "banana"]
+
+
+// Задача 11
+// function calculateEngravingPrice(message, pricePerWord) {
+//   let words;
+//   // Change code below this line
+//   words = message.split(" ");
+
+//   return words.length * pricePerWord;
+//   // console.log(pricePerWord)
+//   // Change code above this line
+//   // return words;
+// }
+// calculateEngravingPrice("JavaScript is in my blood", 10) 
+// // повертає 50
+// calculateEngravingPrice("JavaScript is in my blood", 20) 
+// // повертає 100
+// calculateEngravingPrice("Web-development is creative work", 40) 
+// // повертає 160
+// calculateEngravingPrice("Web-development is creative work", 20) 
+// // повертає 80
