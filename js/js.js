@@ -117,11 +117,103 @@
 //   // Change code above this line
 //   // return words;
 // }
-// calculateEngravingPrice("JavaScript is in my blood", 10) 
+// calculateEngravingPrice("JavaScript is in my blood", 10)
 // // повертає 50
-// calculateEngravingPrice("JavaScript is in my blood", 20) 
+// calculateEngravingPrice("JavaScript is in my blood", 20)
 // // повертає 100
-// calculateEngravingPrice("Web-development is creative work", 40) 
+// calculateEngravingPrice("Web-development is creative work", 40)
 // // повертає 160
-// calculateEngravingPrice("Web-development is creative work", 20) 
+// calculateEngravingPrice("Web-development is creative work", 20)
 // // повертає 80
+
+
+// Задача 13
+// function slugify(title) {
+//   // Change code below this line
+//   let slug = title.toLowerCase().split(' ').join('-')
+//   console.log(slug);
+
+//   // Change code above this line
+// }
+
+
+// slugify("Arrays for begginers")
+// //  повертає "arrays-for-begginers"
+// slugify("English for developer")
+// // повертає "english-for-developer"
+// slugify("Ten secrets of JavaScript")
+// // повертає "ten-secrets-of-javascript"
+// slugify("How to become a JUNIOR developer in TWO WEEKS")
+// // повертає "how-to-become-a-junior-developer-in-two-weeks"
+
+// Задача 14
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+// console.log(fruits);
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, 4);
+// const lastThreeEls = fruits.slice(-3);
+// console.log(firstTwoEls);
+// console.log(nonExtremeEls);
+// console.log(lastThreeEls);
+
+// // Задача 16
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//     // Change code below this line
+//   let concatArr = firstArray.concat(secondArray);
+//   let lengthArr = concatArr.length;
+//   if (lengthArr >= maxLength) {
+//     let sliceArr = concatArr.slice(0, maxLength);
+//     return sliceArr;
+//   }
+//     // Change code above this line
+//   }
+// makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)
+// // повертає["Mango", "Poly", "Ajax"]
+// makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)
+// // повертає["Mango", "Poly", "Houston", "Ajax"]
+// makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)
+// // повертає["Mango", "Ajax", "Chelsea"]
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)
+// // повертає["Earth", "Jupiter"]
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)
+// // повертає["Earth", "Jupiter", "Neptune", "Uranus"]
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)
+// // повертає[]
+
+
+
+// // // Задача 17
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i += 1 ) { // Change this line
+//   console.log(i);
+// }
+
+
+
+// // // Задача 18
+// function calculateTotal(number) {
+//  // Change code below this line
+//   let totalNumber = 0;
+//   for (let i = 1; i <= number; i += 1) { // Change this line
+//     totalNumber += i;
+//   }
+//   return totalNumber;
+// }
+
+// calculateTotal(1);
+// //  повертає 1
+//   calculateTotal(3);
+// //  повертає 6
+//   calculateTotal(7);
+// //  повертає 28
+//   calculateTotal(18);
+// //  повертає 171
+//   calculateTotal(24);
+// //  повертає 300
+
+
+
