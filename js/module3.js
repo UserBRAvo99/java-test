@@ -40,3 +40,66 @@
 
 // console.log(keys);
 // console.log(values);
+
+
+// // Задача номер 12
+// function countProps(object) {
+//     let propCount = 0;
+//     // console.log(propCount);
+
+//   // Change code below this line
+//     const values = Object.values(object);
+//     propCount = (values.length);
+//   // Change code above this line
+//     return propCount;
+// }
+
+// countProps({})
+// //  повертає 0
+// countProps({ name: "Mango", age: 2 })
+// //  повертає 2
+// countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })
+// //  повертає 3
+
+
+// // Задача номер 13
+// const apartment = {
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+// };
+// const values = [];
+// console.log(values);
+// // Change code below this line
+// for (const value of Object.values(apartment)) {
+//     values.push(value)
+    
+// }
+// const keys = Object.keys(apartment);
+// console.log(keys);
+
+// // Задача номер 14
+// function countProps(object) {
+//   // Change code below this line
+//     let propCount = 0;
+    
+
+//     // for (const key in object) {
+//     // if (object.hasOwnProperty(key)) {
+//     //     propCount += 1;
+//     // }
+//     // }
+//     propCount = Object.keys(object)
+//     return propCount.length;
+//   // Change code above this line
+// }
+
+// countProps({})
+// console.log(countProps({}));
+// //  повертає 0
+// countProps({ name: "Mango", age: 2 })
+// console.log(countProps({ name: "Mango", age: 2 }));
+// //  повертає 2
+// countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+// //  повертає 3
