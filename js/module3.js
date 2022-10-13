@@ -103,3 +103,44 @@
 // countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })
 // console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
 // //  повертає 3
+
+// // Задача номер 16
+// function countTotalSalary(salaries) {
+//     let totalSalary = 0;
+    
+//   // Change code below this line
+//     console.log(Object.values(salaries));
+//     for ( const salarie of Object.values(salaries)) {
+//         totalSalary += salarie;
+//     }
+//   // Change code above this line
+//     return totalSalary;
+// }
+
+// countTotalSalary({})
+// console.log(countTotalSalary({}));
+// //  повертає 0
+// countTotalSalary({ mango: 100, poly: 150, alfred: 80 })
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+// //  повертає 330
+// countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 })
+// console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
+// //  повертає 400
+
+// // Задача номер 17
+// const colors = [
+//     { hex: "#f44336", rgb: "244,67,54" },
+//     { hex: "#2196f3", rgb: "33,150,243" },
+//     { hex: "#4caf50", rgb: "76,175,80" },
+//     { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// for (const colorHex of Object.values(colors)) {
+//     hexColors.push(...Object.values([colorHex.hex]))
+//     rgbColors.push(...Object.values([colorHex.rgb]))
+// }
+// // Change code below this line
+// console.log(hexColors);
+// console.log(rgbColors);
