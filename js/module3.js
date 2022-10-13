@@ -144,3 +144,108 @@
 // // Change code below this line
 // console.log(hexColors);
 // console.log(rgbColors);
+
+
+// // // Задача номер 18
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   // Change code below this line
+//     for (product of products){
+//         console.log(product);
+//         if (productName === product.name) {
+//             return product.price
+//         }
+        
+// }
+// return null
+    
+//   // Change code above this line
+// }
+
+// // getProductPrice("Radar")
+// console.log(getProductPrice("Radar"));
+// //  повертає 1300.
+// // getProductPrice("Grip")
+// console.log(getProductPrice("Grip"));
+// //  повертає 1200.
+// // getProductPrice("Scanner")
+// console.log(getProductPrice("Scanner")
+// );
+// //  повертає 2700.
+// // getProductPrice("Droid")
+// console.log(getProductPrice("Droid")
+// );
+// //  повертає 400.
+// // getProductPrice("Engine")
+// console.log(getProductPrice("Engine")
+// );
+// //  повертає null.
+
+// // // Задача номер 19
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//     const arr = [];
+//     for (const product of products)
+//         if (product[propName]) {
+//             arr.push(product[propName]);
+//     }
+//     return arr
+//   // Change code above this line
+// }
+
+// console.log(getAllPropValues("name"));
+// // повертає["Radar", "Scanner", "Droid", "Grip"]
+// console.log(getAllPropValues("quantity"));
+// // повертає[4, 3, 7, 9]
+// console.log(getAllPropValues("price"));
+// // повертає[1300, 2700, 400, 1200]
+// console.log(getAllPropValues("category"));
+// // повертає[]
+
+
+
+// // // // Задача номер 20
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Change code below this line
+
+//     for (product of products) {
+//         console.log(product.name);
+//         if (product.name === productName) {
+//             return product.price * product.quantity
+//         }
+//     }
+//     return 0;
+//   // Change code above this line
+    
+// }
+
+// console.log(calculateTotalPrice("Blaster"));
+// //  повертає 0
+// console.log(calculateTotalPrice("Radar"));
+// //  повертає 5200
+// console.log(calculateTotalPrice("Droid"));
+// //  повертає 2800
+// console.log(calculateTotalPrice("Grip"));
+// //  повертає 10800
+// console.log(calculateTotalPrice("Scanner"));
+// //  повертає 8100
