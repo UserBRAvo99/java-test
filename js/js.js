@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 // const money = Number(prompt('Введи скільки в тебе грн',));
 // console.log( money )
 // const candy = Number(prompt('Ціна цукерки 25грн. Введи скільки цукерок ти хочеш купити',))
@@ -215,5 +215,257 @@
 //   calculateTotal(24);
 // //  повертає 300
 
+// // // Задача 19
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
 
 
+// for (let i = 0; i < fruits.length; i += 1) { // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
+
+
+// // // Задача 20
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+//   // Change code above this line
+//   console.log(total);
+//   return total;
+// }
+
+// calculateTotalPrice([12, 85, 37, 4])
+// //  повертає 138
+// calculateTotalPrice([164, 48, 291])
+// //  повертає 503
+// calculateTotalPrice([412, 371, 94, 63, 176])
+// //  повертає 1116
+
+
+// // // Задача 21
+// function findLongestWord(string) {
+//   // Change code below this line
+//   let arrString = string.split(' ');
+//   let longestWord = arrString[0];
+//   // console.log(longestWord);
+  
+//   for (let i = 1; i < arrString.length; i += 1) {
+//     if (arrString[i].length > longestWord.length) {
+//       console.log(longestWord);
+//     }
+//   }
+//   return longestWord;
+//   // Change code above this line
+// }
+// findLongestWord("The quick brown fox jumped over the lazy dog")
+// //  повертає jumped
+// findLongestWord("Google do a roll")
+// //  повертає Google
+// findLongestWord("May the force be with you")
+// //  повертає force
+// // findLongestWord()
+// //  з випадковим рядком повертає правильне значення
+
+
+
+
+// // // Задача 22
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   let number
+
+
+
+//   // Change code below this line
+//   for (let i = min; i <= max; i += 1) {
+//     number = i;
+//     numbers.push(number);
+//   }
+//   // Change code above this line
+//   return numbers;
+// }
+
+// createArrayOfNumbers(1, 3)
+// // повертає[1, 2, 3]
+// createArrayOfNumbers(14, 17)
+// // повертає[14, 15, 16, 17]
+// createArrayOfNumbers(29, 34)
+// // повертає[29, 30, 31, 32, 33, 34]
+// createArrayOfNumbers()
+// //  з випадковими min і max повертає правильний масив
+
+
+// // // // Задача 23
+// function filterArray(numbers, value) {
+//    // Change code below this line
+//   const arrNumbers = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] > value) {
+//       arrNumbers.push(numbers[i])
+//     }
+//   }
+//   return arrNumbers;
+//   // Change code above this line
+// }
+
+// filterArray([1, 2, 3, 4, 5], 3)
+// // повертає[4, 5]
+// filterArray([1, 2, 3, 4, 5], 4)
+// // повертає[5]
+// filterArray([1, 2, 3, 4, 5], 5)
+// // повертає[]
+// filterArray([12, 24, 8, 41, 76], 38)
+// // повертає[41, 76]
+// filterArray([12, 24, 8, 41, 76], 20)
+// // повертає[24, 41, 76]
+// filterArray()
+// //  з випадковим масивом і числом повертає правильний масив
+
+
+// // // // // Задача 25
+
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   const arrOneTwo = [];
+//   console.log(arrOneTwo);
+//   for (let i = 0; i < array1.length; i += 1) {
+//     if (array2.includes(array1[i])) {
+//       arrOneTwo.push(array1[i]);
+//     }
+//   }
+// return arrOneTwo;
+//  // Change code above this line
+// }
+
+// getCommonElements([1, 2, 3], [2, 4])
+// // повертає[2]
+// getCommonElements([1, 2, 3], [2, 1, 17, 19])
+// // повертає[1, 2]
+// getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27])
+// // повертає[12, 27, 3]
+// getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40])
+// // повертає[10, 30, 40]
+// getCommonElements([1, 2, 3], [10, 20, 30])
+// // повертає[]
+
+
+
+// // Задача 26
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   // for (let i = 0; i < order.length; i += 1) {
+//   //   total += order[i];
+//   // }
+// for (const value of order) {
+//     total += value
+// }
+//   // Change code above this line
+//   return total;
+// }
+
+
+// calculateTotalPrice([12, 85, 37, 4])
+// //  повертає 138
+// calculateTotalPrice([164, 48, 291])
+// //  повертає 503
+// calculateTotalPrice([412, 371, 94, 63, 176])
+// //  повертає 1116
+// calculateTotalPrice([])
+// //  повертає 0
+// calculateTotalPrice()
+// //  з випадковим масивом чисел повертає правильну суму
+
+
+// // Задача 27 рефакторинг
+
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   // for (let i = 0; i < numbers.length; i += 1)
+//   for (const number of numbers) {
+
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+
+
+
+// // // Задача 29
+
+// function getEvenNumbers(start, end) {
+//    // Change code below this line
+
+//   const evenNumbers = [];
+//   console.log(evenNumbers);
+//   for (let i = start; i <= end; i += 1) {
+//     let number = i;
+//     console.log(number);
+//     let even = i % 2;
+//     if (even === 0) {
+//       evenNumbers.push(number);
+//     }
+//   }
+//   return evenNumbers;
+//     // Change code above this line
+//   }
+
+// getEvenNumbers(2, 5)
+// // повертає[2, 4]
+// getEvenNumbers(3, 11)
+// // повертає[4, 6, 8, 10]
+// getEvenNumbers(6, 12)
+// // повертає[6, 8, 10, 12]
+// getEvenNumbers(8, 8)
+// // повертає[8]
+// getEvenNumbers(7, 7)
+// // повертає[]
+// getEvenNumbers()
+// //  з випадковими start і end повертає правильний масив
+
+// // // Задача 32
+
+// part
+// function includes(array, value) {
+//   console.log(value);
+//   // Change code below this line
+
+//   for (let i = 0; i <= array.length - 1; i += 1) {
+//     console.log(array[i]);
+//     let valueArr = array[i]
+//     console.log(valueArr === value);
+//     if (valueArr.string === value) {
+//       return Boolean;
+//     }
+//   }
+//   return;
+//   }
+
+
+// includes([1, 2, 3, 4, 5], 3)
+// // //  повертає true
+// includes([1, 2, 3, 4, 5], 17)
+// // //  повертає false
+// includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter")
+// //  повертає true
+// includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus")
+// // //  повертає false
+// includes(["apple", "plum", "pear", "orange"], "plum")
+// // //  повертає true
+// includes(["apple", "plum", "pear", "orange"], "kiwi")
+// //  повертає false
+// // includes() для випадкового масиву з випадковим value повертає правильний boolean
+// // У функції includes використовується for, return, але не метод масиву includes
