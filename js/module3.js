@@ -445,3 +445,77 @@
 
 // console.log(bookShelf.updateBook("The last kingdom", "Dune"));
 //     // , значення властивості books - це масив["Dune", "Haze", "The guardian of dreams"]
+
+
+// // // // // // // // Задача номер 39
+// const atTheOldToad = {
+//     potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//     removePotion(potionName) {
+//     // Change code below this line
+//         console.log(potionName);
+// const indexPotion = this.potions.indexOf(potionName)
+//     console.log(indexPotion)
+//     this.potions.splice(indexPotion, 1)
+
+
+//     // Change code above this line
+//     },
+// };
+// atTheOldToad.removePotion("Dragon breath")
+//     // , у властивості potions буде масив["Speed potion", Stone skin"]
+// atTheOldToad.removePotion("Speed potion")
+//     // , у властивості potions буде масив["Stone skin"]
+
+
+
+
+// // // // // // // // Задача номер 41
+const atTheOldToad = {
+    potions: [
+    { name: "Speed potion", price: 460 },
+    { name: "Dragon breath", price: 780 },
+    { name: "Stone skin", price: 520 },
+    ],
+  // Change code below this line
+    getPotions() {
+    return this.potions;
+    },
+    addPotion(newPotion) {
+        if (this.potions.includes(newPotion)) {
+        return `Error! Potion ${newPotion} is already in your inventory!`;
+    }
+
+    this.potions.push(newPotion);
+    },
+    removePotion(potionName) {
+    const potionIndex = this.potions.indexOf(potionName);
+
+    if (potionIndex === -1) {
+        return `Potion ${potionName} is not in inventory!`;
+    }
+
+    this.potions.splice(potionIndex, 1);
+    },
+    updatePotionName(oldName, newName) {
+    const potionIndex = this.potions.indexOf(oldName);
+
+    if (potionIndex === -1) {
+        return `Potion ${oldName} is not in inventory!`;
+    }
+
+    this.potions.splice(potionIndex, 1, newName);
+    },
+  // Change code above this line
+};
+
+console.log(atTheOldToad.getPotions());
+console.log(atTheOldToad.addPotion());
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
