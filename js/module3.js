@@ -127,7 +127,7 @@
 // console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
 // //  повертає 400
 
-// // Задача номер 17
+// // Задача номер 17 - 24
 // const colors = [
 //     { hex: "#f44336", rgb: "244,67,54" },
 //     { hex: "#2196f3", rgb: "33,150,243" },
@@ -140,6 +140,14 @@
 // for (const colorHex of Object.values(colors)) {
 //     hexColors.push(...Object.values([colorHex.hex]))
 //     rgbColors.push(...Object.values([colorHex.rgb]))
+
+// ДЕСТРУКТУРИЗАЦІЯ В ЦИКЛАХ
+// Для того щоб скоротити кількість повторень, можна деструктуризувати властивості об'єкта у локальні змінні в тілі циклу.
+// for (const {hex, rgb} of Object.values(colors)) {
+//     console.log({hex, rgb});
+//     hexColors.push(...Object.values([hex]))
+//     rgbColors.push(...Object.values([rgb]))
+// }
 // }
 // // Change code below this line
 // console.log(hexColors);
@@ -249,3 +257,71 @@
 // //  повертає 10800
 // console.log(calculateTotalPrice("Scanner"));
 // //  повертає 8100
+
+
+// // // // Задача номер 26
+
+
+// Change code below this line
+// function calculateMeanTemperature(forecast) {
+//     // const todayLow = forecast.today.low;
+//     // const todayHigh = forecast.today.high;
+//     // const tomorrowLow = forecast.tomorrow.low;
+//     // const tomorrowHigh = forecast.tomorrow.high;
+//     const {
+//         today: { low: todayLow, high: todayHigh, },
+//         tomorrow: {low:tomorrowLow, high:tomorrowHigh}
+//     } = forecast;
+
+//   // Change code above this line
+//     return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+
+// console.log(calculateMeanTemperature({ today: { low: 28, high: 32 }, tomorrow: { low: 25, high: 29 } }) );
+// // повертає 28.5
+// console.log(calculateMeanTemperature({ today: { low: 37, high: 40 }, tomorrow: { low: 33, high: 38 } }));
+// //  повертає 37
+
+
+
+// // // // Задача номер 29
+// const defaultSettings = {
+//     theme: "light",
+//     public: true,
+//     withPassword: false,
+//     minNumberOfQuestions: 10,
+//     timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//     public: false,
+//     withPassword: true,
+//     timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = { ...defaultSettings, ...overrideSettings };
+// console.log(finalSettings);
+
+
+
+
+// // // // // Задача номер 30
+// function makeTask(data) {
+//     const completed = false;
+//     const category = "General";
+//     const priority = "Normal";
+//   // Change code below this line
+//     const newTask = { completed, category, priority, ...data };
+//     console.log(newTask);
+//     return newTask;
+//   // Change code above this line
+// }
+
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }) );
+// // повертає { category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
+// console.log(makeTask({ category: "Finance", text: "Take interest" }) );
+// // повертає { category: "Finance", priority: "Normal", text: "Take interest", completed: false }
+// console.log(makeTask({ priority: "Low", text: "Choose shampoo" }) );
+// // повертає { category: "General", priority: "Low", text: "Choose shampoo", completed: false }
+// console.log(makeTask({ text: "Buy bread" }) );
+// // повертає { category: "General", priority: "Normal", text: "Buy bread", completed: false }
+
