@@ -325,3 +325,73 @@
 // console.log(makeTask({ text: "Buy bread" }) );
 // // повертає { category: "General", priority: "Normal", text: "Buy bread", completed: false }
 
+
+
+
+// // // // // Задача номер 31
+// Change code below this line
+// function add(...args) {
+//     let total = 0;
+//     for (const arr of args) {
+//         total += arr;
+//     }
+//     return total
+//   // Change code above this line
+// }
+// console.log();
+// console.log(add(15, 27));
+// //  повертає 42
+// console.log(add(12, 4, 11, 48));
+// //  повертає 75
+// console.log(add(32, 6, 13, 19, 8));
+// //  повертає 78
+// console.log(add(74, 11, 62, 46, 12, 36));
+// //  повертає 241
+
+
+// // // // // Задача номер 32
+// Change code below this line
+// function addOverNum(number, ...args) {
+//     let total = 0;
+
+//     for (const arg of args) {
+//         if (number < arg) {
+//             total += arg
+//         }
+//     }
+
+//     return total;
+//   // Change code above this line
+// }
+
+// console.log(addOverNum(50, 15, 27));
+// //  повертає 0
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+// //  повертає 71
+// console.log(addOverNum(15, 32, 6, 13, 19, 8));
+// //  повертає 51
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+// //  повертає 218
+
+// // // // // // Задача номер 33
+// // Change code below this line
+// function findMatches(firstArgs, ...args) {
+//   const matches = []; // Don't change this line
+    
+//     for (const arg of args)
+//     for(const argf of firstArgs)
+//         if (argf === arg) {
+//             matches.push(argf)
+//         }
+//   // Change code above this line
+//     return matches;
+// }
+
+// console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+// // повертає[1, 2]
+// console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+// // повертає[17, 89, 2]
+// console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+// // повертає[24, 9, 41]
+// console.log(findMatches([63, 11, 8, 29], 4, 7, 16));
+// // повертає[]
