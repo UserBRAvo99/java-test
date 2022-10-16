@@ -520,7 +520,8 @@ const atTheOldToad = {
     if (potion.name === oldName) {
         potion.name = newName;
     };
-    }
+        }
+        return `Potion ${oldName} is not in inventory!`;
     },
   // Change code above this line
 };
