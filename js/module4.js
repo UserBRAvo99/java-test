@@ -257,3 +257,61 @@
 // Виклик функції filterArray([1, 2, 3, 4, 5], 5) повертає []
 // Виклик функції filterArray([12, 24, 8, 41, 76], 38) повертає [41, 76]
 // Виклик функції filterArray([12, 24, 8, 41, 76], 20) повертає [24, 41, 76]
+
+
+// // // Задача 12
+// // Change code below this line
+// const getCommonElements = (firstArray, secondArray) => {
+//   const commonElements = [];
+
+//   firstArray.forEach((element) => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+
+//   // Change code above this line
+//   return commonElements;
+// }
+// Виклик getCommonElements([1, 2, 3], [2, 4]) повертає [2]
+// Виклик getCommonElements([1, 2, 3], [2, 1, 17, 19]) повертає [1, 2]
+// Виклик getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]) повертає [12, 27, 3]
+// Виклик getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]) повертає [10, 30, 40]
+// Виклик getCommonElements([1, 2, 3], [10, 20, 30]) повертає []
+
+
+
+// // // // Задача 13
+// const changeEven = (numbers, value) => {
+//   // Change code below this line
+//     let newArrNumbers = [];
+//     console.log(newArrNumbers);
+//   // for (let i = 0; i < numbers.length; i += 1) {
+//   //   if (numbers[i] % 2 === 0) {
+//   //     numbers[i] = numbers[i] + value;
+//   //   }
+//   // }
+//     numbers.forEach((item) => {
+//         if (item % 2 === 0) {
+//             newArrNumbers.push(item + value);
+//         } else {
+//             newArrNumbers.push(item);
+//     }
+//     }); return newArrNumbers;
+//   // Change code above this line
+// }
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// //  повертає новий масив[1, 12, 3, 14, 5]
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
+// //  повертає новий масив[12, 18, 3, 7, 14, 16]
+// console.log(changeEven([17, 24, 68, 31, 42], 100));
+// //  повертає новий масив[17, 124, 168, 31, 142]
+// console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
+// //  повертає новий масив[144, 13, 81, 192, 13
+
+// // // // Задача 14
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// // Change code below this line
+// const planetsLengths = planets.map(planet => planet.length);
+// console.log(planetsLengths);
