@@ -402,3 +402,13 @@
 
 // const topRatedBooks = books.filter(book => book.rating >= 8);
 // const booksByAuthor = books.filter(book => book.author === "Bernard Cornwell");
+
+// // // // Задача 25
+// // Change code below this line
+// const getFriends = (users) => {
+//     const allFriends = users.flatMap(user => user.friends)
+//   const uniqueFriends = allFriends.filter((friends, index, array) => array.indexOf(friends) === index );
+//   return uniqueFriends;
+// };
+// // Change code above this line
+
