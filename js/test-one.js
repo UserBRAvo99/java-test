@@ -121,7 +121,7 @@ const funAction = () => {
 }
 
 //лічильник який запустить функцію і - разів
-for (let i = 1; i <= 20; i += 1) {
+for (let i = 1; i <= 10; i += 1) {
     funAction();
     randomAction = Math.round(Math.random() * (5 - 1) + 1)
 
