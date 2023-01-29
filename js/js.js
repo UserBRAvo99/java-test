@@ -7,9 +7,6 @@
 // const total = (money - (candy * candyPrise));
 // console.log(total)
 
-
-
-
 // const first = Number(prompt('Введи перше значення',));
 // const second = Number(prompt('Введи друге значення',));
 // const action = prompt('Введи дію',);
@@ -53,12 +50,9 @@
 // }
 // console.log(sum);
 
-
-
 // for (let i = 0; i <= 100; i += 5) {
 //     console.log(i);
 // }
-
 
 // Задача
 // const minSalary = 500;
@@ -73,8 +67,6 @@
 // }
 // console.log(`Фонд зарплат складає - ${totalSalary}`)
 
-
-
 // const clients = ["Mango", "Ajax", "Poly"];
 
 // for (const client of clients) {
@@ -87,14 +79,11 @@
 //     console.log(character);
 // }
 
-
-
 // function getExtremeElements(array) {
 //   // Change code below this line
 //   let arrayFirst = [array[0], array[array.length - 1]];
 
 //   console.log(arrayFirst)
-
 
 //   // Change code above this line
 // }
@@ -104,7 +93,6 @@
 // // повертає["Earth", "Venus"]
 // getExtremeElements(["apple", "peach", "pear", "banana"])
 // // повертає["apple", "banana"]
-
 
 // Задача 11
 // function calculateEngravingPrice(message, pricePerWord) {
@@ -126,7 +114,6 @@
 // calculateEngravingPrice("Web-development is creative work", 20)
 // // повертає 80
 
-
 // Задача 13
 // function slugify(title) {
 //   // Change code below this line
@@ -135,7 +122,6 @@
 
 //   // Change code above this line
 // }
-
 
 // slugify("Arrays for begginers")
 // //  повертає "arrays-for-begginers"
@@ -182,8 +168,6 @@
 // makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)
 // // повертає[]
 
-
-
 // // // Задача 17
 // const start = 3;
 // const end = 7;
@@ -191,8 +175,6 @@
 // for (let i = start; i <= end; i += 1 ) { // Change this line
 //   console.log(i);
 // }
-
-
 
 // // // Задача 18
 // function calculateTotal(number) {
@@ -218,12 +200,10 @@
 // // // Задача 19
 // const fruits = ['apple', 'plum', 'pear', 'orange'];
 
-
 // for (let i = 0; i < fruits.length; i += 1) { // Change this line
 //   const fruit = fruits[i]; // Change this line
 //   console.log(fruit);
 // }
-
 
 // // // Задача 20
 
@@ -245,14 +225,13 @@
 // calculateTotalPrice([412, 371, 94, 63, 176])
 // //  повертає 1116
 
-
 // // // Задача 21
 // function findLongestWord(string) {
 //   // Change code below this line
 //   let arrString = string.split(' ');
 //   let longestWord = arrString[0];
 //   // console.log(longestWord);
-  
+
 //   for (let i = 1; i < arrString.length; i += 1) {
 //     if (arrString[i].length > longestWord.length) {
 //       console.log(longestWord);
@@ -270,16 +249,11 @@
 // // findLongestWord()
 // //  з випадковим рядком повертає правильне значення
 
-
-
-
 // // // Задача 22
 
 // function createArrayOfNumbers(min, max) {
 //   const numbers = [];
 //   let number
-
-
 
 //   // Change code below this line
 //   for (let i = min; i <= max; i += 1) {
@@ -298,7 +272,6 @@
 // // повертає[29, 30, 31, 32, 33, 34]
 // createArrayOfNumbers()
 // //  з випадковими min і max повертає правильний масив
-
 
 // // // // Задача 23
 // function filterArray(numbers, value) {
@@ -326,7 +299,6 @@
 // filterArray()
 // //  з випадковим масивом і числом повертає правильний масив
 
-
 // // // // // Задача 25
 
 // function getCommonElements(array1, array2) {
@@ -353,8 +325,6 @@
 // getCommonElements([1, 2, 3], [10, 20, 30])
 // // повертає[]
 
-
-
 // // Задача 26
 
 // function calculateTotalPrice(order) {
@@ -371,7 +341,6 @@
 //   return total;
 // }
 
-
 // calculateTotalPrice([12, 85, 37, 4])
 // //  повертає 138
 // calculateTotalPrice([164, 48, 291])
@@ -382,7 +351,6 @@
 // //  повертає 0
 // calculateTotalPrice()
 // //  з випадковим масивом чисел повертає правильну суму
-
 
 // // Задача 27 рефакторинг
 
@@ -401,8 +369,6 @@
 //   return filteredNumbers;
 //   // Change code above this line
 // }
-
-
 
 // // // Задача 29
 
@@ -453,7 +419,6 @@
 //   }
 //   return;
 //   }
-
 
 // includes([1, 2, 3, 4, 5], 3)
 // // //  повертає true
