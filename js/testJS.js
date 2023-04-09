@@ -245,3 +245,129 @@ const arrWords = ['apple', 'hazelnut', 'avocado', 'banana', 'lemon', 'mandarin',
 // };
 
 // console.log(transformationString(stringWords));
+
+// 13 Створи функцію, яка приймає масив чисел та повертає новий масив, який містить тільки непарні числа з вхідного масиву.
+
+// const arrNumbers = [1, 33, 65, 33, 5, 68, 52];
+
+// const oddNumbers = arr => arr.filter(number => number % 2 !== 0);
+
+// console.log(oddNumbers(arrNumbers));
+
+// ??????? 14 Створи функцію, яка приймає два масиви та повертає новий масив, який містить всі елементи першого масиву, які не зустрічаються в другому масиві.
+
+// const arrNumbers1 = [1, 33, 65, 33, 5, 68, 52];
+// const arrNumbers2 = [1, 33, 65, 34, 5, 67, 52];
+
+// const checkNumbers = (arr1, arr2) => {
+//     const newArr = [];
+//     arr1.forEach(number1 => {
+//         console.log(number1);
+//         arr2.forEach(number2 => {
+//             console.log(number2);
+//             if (number1 === number2) {
+//                 newArr.push(number1);
+//             }
+//         });
+//     });
+//     return newArr;
+// };
+
+// console.log(checkNumbers(arrNumbers1, arrNumbers2));
+
+// 15 Створи функцію, яка приймає масив об'єктів та повертає новий масив, який містить тільки ті об'єкти з вхідного масиву, які мають властивість age більшу або дорівнює заданому значенню.
+
+// const usersArr = [
+//     {
+//         name: 'John',
+//         age: 12,
+//     },
+//     {
+//         name: 'Tom',
+//         age: 16,
+//     },
+//     {
+//         name: 'Karl',
+//         age: 20,
+//     },
+//     {
+//         name: 'Jack',
+//         age: 34,
+//     },
+//     {
+//         name: 'Bob',
+//         age: 18,
+//     },
+// ];
+// const age = 18;
+
+// const filterAge = (users, age) => users.filter(user => user.age >= age);
+
+// console.log(filterAge(usersArr, age));
+
+// 16 Створи функцію, яка приймає рядок та повертає новий рядок, який містить тільки унікальні символи з вхідного рядка, в тому ж порядку, в якому вони зустрічаються в оригінальному рядку
+
+// const stringWords = 'apple hazelnut avocado banana lemon mandarin peach';
+
+// const filterString = string => {
+//     return string
+//         .split('')
+//         .filter((letter, index, arr) => {
+//             console.log(letter);
+//             return arr.indexOf(letter) === index;
+//         })
+//         .join('');
+// };
+
+// console.log(filterString(stringWords));
+
+// 17 Напиши функцію, яка приймає масив і повертає останній елемент масиву. Якщо масив порожній, функція повертає null.
+
+// const arrNumbers1 = [1, 33, 65, 33, 5, 68, 52];
+
+// const lastElementArr = arr => (arr.length === 0 ? null : arr[arr.length - 1]);
+
+// console.log(lastElementArr(arrNumbers1));
+
+// 18 Напиши функцію, яка приймає два масиви і повертає новий масив, в якому елементи - це сума елементів з однаковими індексами у вхідних масивах.
+
+// const arrNumbers1 = [1, 33, 65, 33, 5, 68, 52];
+// const arrNumbers2 = [1, 33, 65, 34, 5, 67, 100];
+
+// const totalNumberArr = (arr1, arr2) => {
+//     const totalArr = [];
+//     arr1.forEach((number1, index1) => {
+//         arr2.forEach((number2, index2) => {
+//             if (index1 === index2) {
+//                 totalArr.push(number1 + number2);
+//             }
+//         });
+//     });
+//     return totalArr;
+// };
+
+// console.log(totalNumberArr(arrNumbers1, arrNumbers2));
+
+//  19 Напиши функцію, яка приймає масив чисел і повертає новий масив, в якому елементи - це квадрати чисел з вхідного масиву, відсортовані в порядку зростання.
+
+// const arrNumbers = [1, 33, 65, 33, 5, 68, 52];
+
+// const squareOfNumberSort = arr => arr.map(number => Math.pow(number, 2)).sort((a, b) => a - b);
+
+// console.log(squareOfNumberSort(arrNumbers));
+
+// 20 Напиши функцію, яка приймає рядок як аргумент та повертає кількість голосних літер у рядку.
+
+// const stringWords = 'apple hazelnut avocado banana lemon mandarin peach';
+// const vowels = 'aeiouy';
+// const filterString = string => {
+//     let total = 0;
+//     string.split('').forEach(letter => {
+//         if (vowels.includes(letter)) {
+//             total += 1;
+//         }
+//     });
+//     return total;
+// };
+
+// console.log(filterString(stringWords));
