@@ -254,25 +254,19 @@ const arrWords = ['apple', 'hazelnut', 'avocado', 'banana', 'lemon', 'mandarin',
 
 // console.log(oddNumbers(arrNumbers));
 
-// ??????? 14 Створи функцію, яка приймає два масиви та повертає новий масив, який містить всі елементи першого масиву, які не зустрічаються в другому масиві.
+//  14 Створи функцію, яка приймає два масиви та повертає новий масив, який містить всі елементи першого масиву, які не зустрічаються в другому масиві.
 
 // const arrNumbers1 = [1, 33, 65, 33, 5, 68, 52];
 // const arrNumbers2 = [1, 33, 65, 34, 5, 67, 52];
-
 // const checkNumbers = (arr1, arr2) => {
 //     const newArr = [];
 //     arr1.forEach(number1 => {
-//         console.log(number1);
-//         arr2.forEach(number2 => {
-//             console.log(number2);
-//             if (number1 === number2) {
-//                 newArr.push(number1);
-//             }
-//         });
+//         if (!arr2.includes(number1)) {
+//             newArr.push(number1);
+//         }
 //     });
 //     return newArr;
 // };
-
 // console.log(checkNumbers(arrNumbers1, arrNumbers2));
 
 // 15 Створи функцію, яка приймає масив об'єктів та повертає новий масив, який містить тільки ті об'єкти з вхідного масиву, які мають властивість age більшу або дорівнює заданому значенню.
