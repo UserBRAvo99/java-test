@@ -365,3 +365,10 @@ const arrWords = ['apple', 'hazelnut', 'avocado', 'banana', 'lemon', 'mandarin',
 // };
 
 // console.log(filterString(stringWords));
+
+// Code Wars
+
+//
+//
+//
+//

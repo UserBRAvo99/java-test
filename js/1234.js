@@ -1,47 +1,18 @@
-// const taskBoxEl = document.querySelector('.task-box');
-// const taskTitleEl = document.querySelector('.task');
-
-// const bodyEl = document.querySelector('body');
-
-// // масив для підрахунку правильних та неправильних відповідей
-// const yes = [];
-// const no = [];
-// // змінні для дії множення
-// let a = 0;
-// let b = 0;
-// a = Math.round(Math.random() * (9 - 1) + 1);
-// b = Math.round(Math.random() * (9 - 1) + 1);
-// let reply = '';
-// let replyNumber = 0;
-// //множеняя
-// function funActionOne() {
-//     reply = `Помнож ${a} * ${b}, та запиши відповідь.`;
-//     replyNumber = a * b;
-// }
-// funActionOne();
-// console.log(replyNumber);
-// function makeTask() {
-//     return `<div class="task-box">
-//         <p class="task">${reply}</p>
-//         <input type="text" class="input-task" placeholder="Напиши тут відповідь">
-//         <button class="btn">ok</button>
-//     </div>`;
-// }
-
-// taskBoxEl.insertAdjacentHTML('beforeend', makeTask());
-// const inputEl = document.querySelector('.input-task');
-// const btnEl = document.querySelector('.btn');
-// let inputReply = 0;
-// inputEl.addEventListener('input', event => {
-//     console.log(+event.target.value);
-//     inputReply = +event.target.value;
-// });
-
-// btnEl.addEventListener('click', event => {
-//     inputEl.readOnly = true;
-//     if (replyNumber === inputReply) {
-//         console.log('yes');
-//     } else {
-//         console.log('no');
-//     }
-// });
+function likes(names) {
+    if (names.length === 1) return `${names[0]} likes this`;
+    if (names.length === 2) return `${names[0]} and ${names[1]} like this`;
+    if (names.length === 3) return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+    if (names.length > 3)
+        return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
+    return 'no one likes this';
+}
+console.log(likes([]));
+// , 'no one likes this');
+console.log(likes(['Peter']));
+// , 'Peter likes this');
+console.log(likes(['Jacob', 'Alex']));
+// , 'Jacob and Alex like this');
+console.log(likes(['Max', 'John', 'Mark']));
+// , 'Max, John and Mark like this');
+console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']));
+// , 'Alex, Jacob and 2 others like this');
