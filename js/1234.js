@@ -16,3 +16,19 @@
 // // , 'Max, John and Mark like this');
 // console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']));
 // // , 'Alex, Jacob and 2 others like this');
+
+//
+//
+//
+function moveZeros(arr) {
+    const newArr = [];
+    const zeroArr = [];
+    arr.forEach(e => {
+        if (e === 0) zeroArr.push(e);
+        if (e !== 0) newArr.push(e);
+    });
+
+    return [...newArr, ...zeroArr];
+}
+console.log(moveZeros([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]));
+// [1, 2, 1, 1, 3, 1, 0, 0, 0, 0])
